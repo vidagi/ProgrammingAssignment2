@@ -12,8 +12,8 @@ makeCacheMatrix <- function(x = matrix()) {
         setinv <- function(inverse) inv <<- inverse     ##describes 'setinv' method
         getinv <- function() inv                        ##describes 'getinv' method
         list(set = set, get = get,
-             setinverse = setinverse,
-             getinverse = getinverse)
+             setinv = setinv,
+             getinv = getinv)
 }
 
 ## instead of solving every time, first checks if there is stored value in the cache
